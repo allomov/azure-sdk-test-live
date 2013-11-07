@@ -1,4 +1,3 @@
-config/
 config/azure.yml
 config/setenvrc
 tmp/

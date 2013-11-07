@@ -1,7 +1,5 @@
-GIT
-  remote: https://github.com/Altoros/azure-sdk-for-ruby.git
-  revision: 89d54b84aafc5bb499277518247aa18c69c032dc
-  branch: release-0.5.1.pre
+PATH
+  remote: ~/work/github/azure-sdk-for-ruby
   specs:
     azure (0.5.0)
       json

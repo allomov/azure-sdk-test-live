@@ -1,0 +1,7 @@
+AZURE_STORAGE_ACCOUNT=<storage-account-name>
+AZURE_STORAGE_ACCESS_KEY=<storage-access-key>
+AZURE_SERVICEBUS_NAMESPACE=<servicebus-namespace>
+AZURE_SERVICEBUS_ACCESS_KEY=<servicebus-access-key>
+AZURE_SERVICEBUS_ISSUER=<servicebus-issuer>
+AZURE_MANAGEMENT_CERTIFICATE=<azure-management-certificate>
+AZURE_SUBSCRIPTION_ID=<azure-subscription-id>

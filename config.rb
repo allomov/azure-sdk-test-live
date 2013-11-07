@@ -6,7 +6,7 @@ require "azure"
 require "settingslogic"
 
 class AzureConfig < Settingslogic
-  source "./config/settings.yml"
+  source "./config/azure.yml"
   namespace "azure"
 end
 

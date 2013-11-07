@@ -1,0 +1,11 @@
+azure:
+  storage: 
+    account: <storage-account-name>
+    access_key: <storage-access-key>
+  servicebus:
+    namespace: <servicebus-namespace>
+    access_key: <servicebus-access-key>
+    issuer: <servicebus-issuer>
+  management_certificate: <azure-management-certificate>
+  subscription_id: <azure-subscription-id>
+  management_endpoint: https://management.core.windows.net
