@@ -1,11 +1,12 @@
 require './config'
-require 'debugger'
 
-VirtualMachineManager = Azure::VirtualMachineManagement::VirtualMachineManagementService
 
-image_file = './tmp/root.vhd'
-image_blob_name = "image-blob"
 image_container_name = "image-container"
+image_blob_name = "image-blob"
+image_file = './tmp/root.vhd'
+storage_endpoint = 
+
+uri = URI('http://example.com/some_path?query=string')
 
 
 # Create an azure storage blob service object
@@ -17,13 +18,13 @@ azure_blob_service = Azure::BlobService.new
 
 # Create a container
 # TODO: add method to check if it container exists 
-# container = azure_blob_service.create_container(image_container_name)
+container = azure_blob_service.create_container(image_container_name)
 
 # Upload a Blob
 # TODO: upload a file, not content
 # content = File.open(image_file, 'rb') { |file| file.read }
-content_file = File.open(image_file, 'r') do |file|
-  azure_blob_service.create_block_blob(image_container_name, image_blob_name, file)  
+content_file = File.open(image_file, 'rb') do |file|
+  azure_blob_service.create_block_blob(container.name, image_blob_name, file)  
 end
 
 
@@ -47,3 +48,6 @@ end
 # # Delete a Container
 # azure_blob_service.delete_container(image_container_name)
 # puts "Container #{image_container_name} is deleted."
+
+
+
