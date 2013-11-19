@@ -3,7 +3,7 @@ require 'debugger'
 
 VirtualMachineManager = Azure::VirtualMachineManagement::VirtualMachineManagementService
 
-image_file = './tmp/root.vhd'
+image_file = './tmp/image.jpg'
 image_blob_name = "image-blob"
 image_container_name = "image-container"
 

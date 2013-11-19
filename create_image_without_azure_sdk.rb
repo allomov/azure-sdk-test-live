@@ -67,10 +67,11 @@ http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 
 
 management_endpoint_uri = URI.parse(management_endpoint + url[1..-1])
-request = Net::HTTP::Put.new(management_endpoint_uri.path)
+request = Net::HTTP::Post.new(management_endpoint_uri.path)
 headers.each_pair { |key, value| request[key] = value }
 
-request.body_stream = File.new(file_name)
+request.body = multipart_data
+request.content_type = 'multipart/form-data'
 
 response = http.request(request)
 puts response.body
